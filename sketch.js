@@ -119,9 +119,9 @@ function draw(){
 
     //console.log(Block1.body.speed);
 
-    if (keyWentDown("SPACE")){
+    /*if (keyWentDown("SPACE")){
         rope.reset();
-    }
+    }*/
 
 }
 
@@ -132,5 +132,10 @@ function mouseDragged(){
 
 function mouseReleased(){
     rope.fly();
+}
+function keyPressed(){
+    if(keyCode === 32){
+        rope.reset();
+    }
 }
 
